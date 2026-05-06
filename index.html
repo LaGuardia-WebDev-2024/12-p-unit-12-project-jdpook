@@ -21,44 +21,55 @@ Select ONE Additional Feature to Add
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Quiz About [Me]</h1>
+    <h1>Quiz about Jacob</h1>
     <hr />
+    <img
+    src="https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABTYsXUcwD8Y4p0Su3hPLMxTonvnDJRMWVgKo_-5KF00XIYOmGre25ro5YAm3gaQQsYrPIbT2SxrKiNWk6Y9171m7lhSS7EmJs7QGKIhcyg.jpg?r=6e5"
+    width=300
+    >
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
-        🎥 What is my favorite movie?
+        🤍 What is my favorite color?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">black</option>
+          <option value="movie2">blue</option>
+          <option value="movie3">pink</option>
+          <option value="movie4">purple</option>
         </select>
       </label>
-      <button type="submit">Check Movie Answer</button>
+      <button type="submit">Check Color Answer</button>
     </form>
     <div id="movie-result">
       <p id="movie-text"></p>
     </div>
     <hr />
+    <img 
+    src="https://images.saymedia-content.com/.image/t_share/MTc0NDIxMTY2MTIyMDE4MTUy/13-philosophies-explained-using-madoka.jpg"
+    width="300"
+    >
     <!-- Book Question -->
     <form id="book-form">
       <label>
-        📖 What is my favorite book?
+        💗 What is my love language?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">touch</option>
+          <option value="book2">gift giving</option>
+          <option value="book3">words of affirmation</option>
+          <option value="book4">acts of service</option>
         </select>
       </label>
-      <button type="submit">Check Book Answer</button>
+      <button type="submit">Check Love Language Answer</button>
     </form>
     <div id="book-result">
       <p id="book-text"></p>
     </div>
+    <img
+      src="https://images6.alphacoders.com/326/326068.jpg"
+      width=300
+      >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      
       //========================Movie Question jQuery Code
       $("#movie-form").on("submit", function (event) {
         event.preventDefault();
@@ -66,7 +77,7 @@ Select ONE Additional Feature to Add
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
+        if (answer === "movie3") {
           $("#movie-text").text("YESSSS!");
         } 
         else {
@@ -81,7 +92,7 @@ Select ONE Additional Feature to Add
         var $answer = $("#book-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
+        if (answer === "touch") {
           $("#book-text").text("YESSSS!");
         } 
         else {
